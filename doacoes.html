@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Faça uma Doação | ONG Sementes do Saber</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body> 
+
+    <header class="header-principal">
+        <a href="index.html" class="logo">
+            <h1>ONG Sementes do Saber</h1>
+        </a>
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="index.html">Página Principal</a></li> 
+                <li><a href="projetos.html">Nossos Projetos</a></li> 
+                <li><a href="doacoes.html">Faça uma Doação</a></li>
+            </ul>
+        </nav>
+        <div class="header-acoes">
+            <button id="btn-dark-mode" class="btn-dark-mode" aria-label="Alternar modo escuro">🌙</button>
+            <a href="cadastro.html" class="btn-cadastro">Seja um Voluntário</a>
+            <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-expanded="false">
+                <span id="hamburguer-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+        
+            <section>
+                <h2>Sua Doação Cultiva o Futuro</h2>
+               <img src="imagens/doacao.jpg" alt="Mãos segurando moedas e uma planta pequena" class="img-cabecalho-pagina">
+                <p style="font-size: var(--fonte-h3); margin-bottom: var(--espaco-g);">
+                    Cada contribuição, não importa o valor, nos ajuda a comprar novos livros, manter nossas bibliotecas e expandir nossos projetos.
+                </p>
+                <p>Todo o valor arrecadado é investido diretamente em nossas atividades e prestamos contas mensalmente. Escolha a melhor forma de ajudar:</p>
+            </section>
+
+            <section class="grid-12-container">
+
+                <div class="info-column-card col-12 d-col-6">
+                    <h3>Doação via PIX</h3>
+                    <p>A forma mais rápida e direta de nos ajudar. Você pode usar a nossa chave aleatória ou ler o QR Code abaixo com o app do seu banco.</p>
+                    <br>
+                    <p><strong>Chave PIX (E-mail):</strong><br> contato@sementesdosaber.org.br</p>
+                    <br>
+                    <img src="imagens/pix-qrcode.png" alt="QR Code para doação PIX" style="max-width: 250px; margin: 0 auto; border-radius: 8px; box-shadow: none;">
+                </div>
+
+                <div class="info-column-card col-12 d-col-6">
+                    <h3>Transferência (TED/DOC)</h3>
+                    <p>Você também pode doar diretamente em nossa conta bancária. Estes são os nossos dados:</p>
+                    <br>
+                    <ul style="list-style: none; margin-left: 0;">
+                        <li><strong>Banco:</strong> Banco S.A. (Cód. 000)</li>
+                        <li><strong>Agência:</strong> 1234</li>
+                        <li><strong>Conta Corrente:</strong> 56789-0</li>
+                        <li><strong>CNPJ:</strong> 12.345.678/0001-99</li>
+                        <li><strong>Nome:</strong> ONG Sementes do Saber</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section>
+                <h3>Doação de Livros</h3>
+                <p>Nossas bibliotecas precisam de livros novos e usados (em bom estado) de literatura infantil e juvenil. Se você tem livros para doar, entre em contato conosco pelo e-mail <a href="mailto:contato@sementesdosaber.org.br" class="link-secundario">contato@sementesdosaber.org.br</a> para combinarmos a coleta ou entrega!</p>
+            </section>
+            
+        </div> 
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ONG Sementes do Saber. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

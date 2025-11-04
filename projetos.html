@@ -3,89 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos</title>
+    
+    <title>Nossos Projetos | ONG Sementes do Saber</title>
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>ONG Sementes do Saber</h1>
-        <nav>
+<body> 
+
+    <header class="header-principal">
+        <a href="index.html" class="logo">
+            <h1>ONG Sementes do Saber</h1>
+        </a>
+        <nav id="menu-principal">
             <ul>
                 <li><a href="index.html">Página Principal</a></li> 
                 <li><a href="projetos.html">Nossos Projetos</a></li> 
-                <li><a href="cadastro.html">Seja um Voluntário</a></li>
+                <li><a href="doacoes.html">Faça uma Doação</a></li>
             </ul>
         </nav>
+        <div class="header-acoes">
+            <button id="btn-dark-mode" class="btn-dark-mode" aria-label="Alternar modo escuro">🌙</button>
+            <a href="cadastro.html" class="btn-cadastro">Seja um Voluntário</a>
+            <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-expanded="false">
+                <span id="hamburguer-icon"></span>
+            </button>
+        </div>
     </header>
 
-    <hr>
-
     <main>
-        <section>
-            <h2>O <strong>Estudo</strong> é o futuro</h2>
-            <img src="imagens/saladeaula.jpg" alt="Crianças assistindo aula e consolidando conhecimento">
-            <p>Em 2024, 1,2% das crianças e adolescentes (até 17 anos) estavam fora da escola, totalizando 619 mil. 
-            Já em relação ao analfabetismo, a taxa para pessoas de 15 anos ou mais foi de 5,3% em 2024, atingindo 9,1 milhões de pessoas. 
-            Nosso papel é mudar essa história.
-            </p>
-        </section>
+        <div class="container">
 
-        <section>
-            <h3>Nossos Projetos Ativos</h3>
-            <h4>Clube do Livro Aberto a Comunidade</h4>
-            <p>
-                Semanalmente, haverá um clube do livro, onde todos poderão participar. Cada um escolhe um livro e discute sobre ele 
-                em um dia na semana. Livros clássicos como Drácula e Franstein para incentivar a leitura e aprendizado de vocabulário, 
-                estarão presentes!
-            </p>
-            <h4>Reforço Escolar</h4>
-            <p>
-                As Crianças e adolescentes de todas as unidades terão reforço escolar e ajuda com aprendizado fora de aula. 
-                Dessa forma, consolidando conhecimento para melhor usá-lo futuramente, no enem ou qualquer instituição acadêmica.
-            </p>
-            <h4>Auxílio Enem</h4>
-            <p>Se o indivíduo desejar ingressar em uma faculdade, 
-            teremos cerca de 200 cursos com video-aulas, livros e materais de qualidade. Com o aprendizado e foco total no vestibular, 
-            podendo se sobressair nas notas e passando facilmente em uma universidade de qualidade.
-        </p>
-        </section>
-           
-        <section>
-            <h3>Como <strong>você</strong> pode fazer a diferença</h3>
+    <section>
+        <h2>Nossos Projetos</h2>
+        <p style="margin-bottom: var(--espaco-g);">Conheça as iniciativas que estão mudando realidades através da educação e da leitura. Cada projeto tem um foco único, mas todos compartilham o mesmo objetivo: cultivar o saber.</p>
 
-            <h4>Seja um Voluntário</h4>
-            <p>
-                Quer Ajudar? Seu tempo, dedicação e carinho podem ser recursos valiosos para nós. Você pode:
-            </p>
-            <ul>
-                <li>Ler para as Crianças</li>
-                <li>Ajudar no reforço escolar e, se for professor(a), dar aula.</li>
-                <li>Ajudando na manutenção do Ambiente: Limpar, organizar, gestão dos jovens, etc.</li>
-                <li>Doando Livros e/ou ajudando na organização da biblioteca.</li>
-            </ul>
+        <div class="info-columns">
 
-            <h4>Realize uma doação</h4>
-            <p>
-                Sua contribuição financeira ou de materiais nos permite comprar novos livros, lanches para as crianças e 
-                manter nossos espaços funcionando.
-            </p>
-            <p>
-                <strong>Chave PIX (CNPJ):</strong> 12.345.678/0001-99
-            </p>
+            <div class="info-column-card">
+                <img src="imagens/projeto-leitura.jpg" alt="Crianças lendo em um projeto">
+                <h3>Biblioteca Comunitária</h3>
+                <p>Nossa principal iniciativa! Montamos e administramos pequenas bibliotecas em áreas carentes, oferecendo um espaço seguro e rico para o aprendizado.</p>
+                <a href="projeto-biblioteca.html" class="link-secundario">Saiba Mais &rarr;</a>
+            </div>
 
-            <h4>Inscreva-se:</h4>
-            <p>Se Inscreva e faça a <strong>diferença</strong>, contamos com sua ajuda!</p>
+            <div class="info-column-card">
+                <img src="imagens/conta-historias.jpg" alt="Voluntário contando história">
+                <h3>Contadores de Histórias</h3>
+                <p>Voluntários visitam orfanatos e hospitais, levando a magia da leitura para crianças que não podem ir até nossas bibliotecas. Uma tarde de alegria e imaginação.</p>
+                <a href="projeto-contadores.html" class="link-secundario">Quero ser voluntário &rarr;</a>
+            </div>
 
-            <a href="cadastro.html">Inscreva-se</a>
-        </section>
+            <div class="info-column-card">
+                <img src="imagens/reforco-escolar.jpg" alt="Aula de reforço escolar">
+                <h3>Reforço Escolar "Saber+"</h3>
+                <p>Oferecemos aulas de reforço gratuitas de português e matemática, ajudando crianças a superarem dificuldades de aprendizado e melhorarem seu desempenho.</p>
+                <a href="reforco-escolar.html" class="link-secundario">Ver horários &rarr;</a>
+            </div>
+
+    </div> </section>
+    
     </main>
-
-    <hr>
 
     <footer>
         <p>&copy; 2025 ONG Sementes do Saber. Todos os direitos reservados.</p>
     </footer>
 
-    
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
